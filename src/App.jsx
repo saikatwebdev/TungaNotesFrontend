@@ -320,6 +320,7 @@ const App = () => {
                   key={elem._id}
                   heading={elem.title}
                   explanation={elem.content}
+                  createdAt={elem.createdAt}
                   onDelete={() => deleteNote(elem._id)}
                 />
               ))

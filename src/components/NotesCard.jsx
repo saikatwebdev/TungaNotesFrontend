@@ -13,6 +13,7 @@ const NotesCard = ({ heading, explanation, createdAt, onDelete }) => {
       </h2>
       <h2 className="text-xl font-light text-gray-800 text-center mt-1 truncate">
         {formattedDate}
+        {console.log(formattedDate)}
       </h2>
       <div className="h-[2px] w-16 bg-indigo-400 mx-auto mb-3 rounded"></div>
       <p className="text-gray-600 text-sm leading-relaxed overflow-y-auto max-h-32 px-1 scrollbar-hide">
