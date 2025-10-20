@@ -3,6 +3,8 @@ import NotesCard from "./components/NotesCard";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const App = () => {
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
