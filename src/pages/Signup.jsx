@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = "https://tunganotesbackend.onrender.com/api";
+
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -17,7 +19,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      await axios.post("https://tunganotesbackend.onrender.com/api/auth/signup", {
+      await axios.post(`${API_URL}/auth/signup`, {
         name,
         email,
         password,
