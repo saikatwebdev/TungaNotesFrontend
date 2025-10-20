@@ -3,8 +3,6 @@ import NotesCard from "./components/NotesCard";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "https://tunganotesbackend.onrender.com/api";
-
 const App = () => {
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
