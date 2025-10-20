@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = process.env.REACT_API_URL || "http://localhost:5000/api";
+
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -29,6 +31,8 @@ const Signup = () => {
         navigate("/login");
       }, 2000);
     } catch (err) {
+      console.log(`${API_URL}/api/auth/signup`);
+
       setError(err.response?.data?.message || "Signup failed. Please try again.");
     } finally {
       setLoading(false);
