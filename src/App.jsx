@@ -20,7 +20,7 @@ const App = () => {
   useEffect(() => {
     if (token) {
       axios
-        .get("http://localhost:5000/api/notes", {
+        .get("https://tunganotesbackend.onrender.com/api/notes", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((res) => setTask(res.data))
@@ -35,7 +35,7 @@ const App = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/notes",
+        "https://tunganotesbackend.onrender.com/api/notes",
         { title, content: detail },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -50,7 +50,7 @@ const App = () => {
   // Delete Note
   const deleteNote = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/notes/${id}`, {
+      await axios.delete(`https://tunganotesbackend.onrender.com/api/notes/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTask(task.filter((t) => t._id !== id));
