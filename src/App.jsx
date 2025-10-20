@@ -126,7 +126,7 @@ const App = () => {
         >
           <div className="flex justify-between w-full items-center mb-2">
             <div>
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <h1 className="text-3xl font-bold bg-green-400 bg-clip-text text-transparent">
                 Add Notes
               </h1>
               <p className="text-gray-400 text-sm mt-1">Create your next note</p>
@@ -169,7 +169,7 @@ const App = () => {
             />
           </div>
 
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 w-full px-5 py-3 rounded-lg text-white font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-blue-600/50 active:scale-95">
+          <button className="bg-green-400 w-full px-5 py-3 rounded-lg text-white font-semibold hover:bg-green-500 transition-all duration-200 shadow-lg hover:shadow-green-600/50 active:scale-95">
             Add Note
           </button>
         </form>
@@ -191,7 +191,7 @@ const App = () => {
           >
             <div className="flex justify-between w-full items-center mb-2">
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-green-400 hover:bg-green-500 bg-clip-text text-transparent">
                   Add Notes
                 </h1>
                 <p className="text-gray-400 text-xs mt-1">Create your next note</p>
@@ -234,7 +234,7 @@ const App = () => {
               />
             </div>
 
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 w-full px-5 py-2.5 rounded-lg text-white font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg active:scale-95">
+            <button className="bg-green-400 w-full px-5 py-2.5 rounded-lg text-white font-semibold hover:bg-green-500 transition-all duration-200 shadow-lg active:scale-95">
               Add Note
             </button>
           </form>
