@@ -63,10 +63,13 @@ const App = () => {
 
   const deleteNote = async (id) => {
     try {
-      await axios.delete(`${API_URL}/notes/${id}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      setTask(task.filter((t) => t._id !== id));
+      await axios.delete(
+        `${API_URL}/notes/${id}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
+      setTask((prevTasks) => prevTasks.filter((t) => t._id !== id));
     } catch (err) {
       console.log(err);
     }
