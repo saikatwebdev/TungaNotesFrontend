@@ -103,7 +103,7 @@ const App = () => {
         <input
           type="text"
           placeholder="Enter Notes Heading"
-          className="px-5 py-2 border-2 outline-none rounded w-full text-black"
+          className="px-5 py-2 border-2 outline-none rounded w-full text-white"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
@@ -111,7 +111,7 @@ const App = () => {
 
         <textarea
           placeholder="Enter Details"
-          className="w-full px-5 py-2 outline-none h-20 border-2 rounded text-black"
+          className="w-full px-5 py-2 outline-none h-20 border-2 rounded text-white"
           value={detail}
           onChange={(e) => setDetail(e.target.value)}
           required
