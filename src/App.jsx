@@ -262,6 +262,7 @@ const App = () => {
             <p className="text-gray-400 text-sm mt-1">
               {task.length} {task.length === 1 ? 'note' : 'notes'}
             </p>
+            <img src="./LOGO.png" className="w-20 h-20 rounded-full absolute top-3 right-2" alt="" />
           </div>
 
           <div className="flex-1 overflow-y-auto px-6 pb-6">
@@ -299,6 +300,7 @@ const App = () => {
           <p className="text-gray-400 text-sm mt-1">
             {task.length} {task.length === 1 ? 'note' : 'notes'} saved
           </p>
+          <img src="./LOGO.png" className="absolute right-2 top-3 w-20 h-20 rounded-full" alt="" />
         </div>
 
         <div className="flex-1 overflow-y-auto p-8">
