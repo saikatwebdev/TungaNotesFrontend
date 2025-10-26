@@ -55,10 +55,8 @@ const Signup = () => {
         <div className="bg-gray-900/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-800/50 p-8 transform transition-all duration-300 hover:shadow-blue-500/10">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="inline-block p-3 bg-blue-500/10 rounded-xl mb-4">
-              <svg className="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-              </svg>
+            <div className="inline-block p-3 bg-blue-500/10 rounded-full mb-4">
+              <img src="./LOGO.png" className="w-20 h-20 rounded-full" alt="" />  
             </div>
             <h2 className="text-3xl font-bold text-white mb-2">Create Account</h2>
             <p className="text-gray-400 text-sm">Join us today and get started</p>
@@ -80,7 +78,7 @@ const Signup = () => {
 
             {/* Success Message */}
             {success && (
-              <div className="bg-green-500/10 border border-green-500/50 text-green-400 px-4 py-3 rounded-lg text-sm animate-slideDown backdrop-blur-sm">
+              <div className="bg-blue-500/10 border border-blue-500/50 text-blue-400 px-4 py-3 rounded-lg text-sm animate-slideDown backdrop-blur-sm">
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -157,7 +155,7 @@ const Signup = () => {
             {/* Submit Button */}
             <button 
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40"
+              className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40"
               disabled={loading || success}
             >
               {loading ? (
