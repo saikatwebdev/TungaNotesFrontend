@@ -55,7 +55,7 @@ const Login = () => {
             <p className="text-gray-400 text-sm">Please enter your credentials to continue</p>
           </div>
 
-          {/* Form */}
+          {/*note add korar form */}
           <form onSubmit={handleLogin} className="space-y-5">
             {/* Error Message */}
             {error && (
@@ -69,7 +69,7 @@ const Login = () => {
               </div>
             )}
 
-            {/* Email Input */}
+            {/* Email input */}
             <div className="space-y-2">
               <label className="text-gray-300 text-sm font-medium block">Email Address</label>
               <div className="relative group">
