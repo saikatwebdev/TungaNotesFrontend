@@ -7,21 +7,25 @@ const NotesCard = ({ heading, explanation, createdAt, onDelete }) => {
     timeStyle: 'short',
   });
 
-  // Function to handle text-to-speech
+  // text-to-speech integration
   const handleListen = () => {
-    const utterance = new SpeechSynthesisUtterance(explanation);
-    utterance.lang = 'en-IN';
-    utterance.rate = 1; 
-    utterance.pitch = 1;
-    speechSynthesis.speak(utterance);
+    const noteDetails = new SpeechSynthesisUtterance(explanation);
+    noteDetails.lang = 'en-IN';
+    noteDetails.rate = 1; 
+    noteDetails.pitch = 1;
+    speechSynthesis.speak(noteDetails);
   };
+  const stopListen = () =>{
+    speechSynthesis.cancel()
+  }
 
   return (
     <div className="h-60 w-55 bg-cover bg-[url('https://static.vecteezy.com/system/resources/previews/010/793/873/non_2x/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png')] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-4 cursor-pointer hover:-translate-y-1 relative">
 
-      {/* Listen button at top-right */}
+      {/* Listen button*/}
       <button
         onClick={handleListen}
+        onDoubleClick={stopListen}
         className="absolute top-3 right-3 bg-indigo-500 hover:bg-indigo-600 text-white p-2 rounded-full transition-all duration-200"
         title="Listen to note"
       >
