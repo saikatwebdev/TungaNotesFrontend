@@ -1,5 +1,6 @@
 import React from 'react';
 import { Volume2 } from 'lucide-react'; 
+import { CirclePause } from 'lucide-react';
 
 const NotesCard = ({ heading, explanation, createdAt, onDelete }) => {
   const formattedDate = new Date(createdAt).toLocaleString('en-IN', {
@@ -24,13 +25,20 @@ const NotesCard = ({ heading, explanation, createdAt, onDelete }) => {
 
       {/* Listen button*/}
       <button
+        onClick={stopListen}
+        className="absolute top-3 right-3 bg-indigo-500 hover:bg-indigo-600 text-white p-2 rounded-full transition-all duration-200"
+        title="Listen to note"
+      >
+        <CirclePause size={18} />
+      </button>
+      <button
         onClick={handleListen}
-        onDoubleClick={stopListen}
         className="absolute top-3 right-3 bg-indigo-500 hover:bg-indigo-600 text-white p-2 rounded-full transition-all duration-200"
         title="Listen to note"
       >
         <Volume2 size={18} />
       </button>
+
 
       <h2 className="text-xl font-semibold text-gray-800 text-center mt-2 truncate">
         {heading}
