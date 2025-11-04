@@ -243,7 +243,7 @@ const App = () => {
         {/* Resizable Divider */}
         <div
           onMouseDown={handleMouseDown}
-          className={`h-1.5 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 cursor-row-resize hover:h-2 transition-all duration-200 relative group ${
+          className={`h-1.5 bg-gradient-to-r from-gray-600 via-gray-400 to-gray-600 cursor-row-resize hover:h-2 transition-all duration-200 relative group ${
             isDragging ? 'h-2' : ''
           }`}
         >
