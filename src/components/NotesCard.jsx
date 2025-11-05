@@ -26,7 +26,7 @@ const NotesCard = ({ heading, explanation, createdAt, onDelete }) => {
       {/* Listen button*/}
       <button
         onClick={stopListen}
-        className="absolute top-3 right-5 bg-indigo-500 hover:bg-indigo-600 text-white p-2 rounded-full transition-all duration-200"
+        className="absolute top-3 right-8 bg-indigo-500 hover:bg-indigo-600 text-white p-2 rounded-full transition-all duration-200"
         title="Listen to note"
       >
         <CirclePause size={18} />
